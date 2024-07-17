@@ -151,7 +151,8 @@ var documentObserver = new IntersectionObserver((entries) => {
     }
 },
 {
-    threshold: 0.4 // element must be 40% inside the section for the animation to play
+    threshold: 0.4, // element must be 40% inside the section for the animation to play
+    root: document.body
 }
 );
 // Sections to observe

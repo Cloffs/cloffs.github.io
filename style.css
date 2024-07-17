@@ -28,11 +28,11 @@ body, html {
   box-sizing: border-box;
 
   /* Font sizes */
-  --fs_h1_xl: 4rem;
-  --fs_h1: 3rem;
+  --fs_h1_xl: 3.5rem;
+  --fs_h1: 2.5rem;
 
-  --fs_h2: 2rem;
-  --fs_h2_xl: 2.5rem;
+  --fs_h2: 1.9rem;
+  --fs_h2_xl: 2.4rem;
 
   --fs_p: 1.05rem;
   --fs_p_xl: 1.3rem;
@@ -47,10 +47,20 @@ h1 {
   font-size: var(--fs_h1);
   font-weight: 600;
 }
+h1 span {
+  color: goldenrod;
+  font-size: var(--fs_h1_xl);
+  font-weight: 600;
+}
 
 h2 {
   color: white;
   font-size: var(--fs_h2);
+  font-weight: 500;
+}
+h2 span {
+  color: white;
+  font-size: var(--fs_h2_xl);
   font-weight: 500;
 }
 
@@ -59,9 +69,15 @@ p {
   font-size: var(--fs_p);
   font-weight: 200;
 }
+p span {
+  color: goldenrod;
+  font-size: var(--fs_p_xl);
+  font-weight: 200;
+}
 
 .btn {
   text-decoration: none;
+  font-size: var(--fs_h2);
 }
 
 img {
@@ -106,7 +122,6 @@ img {
 .nav_links a {
   position: relative;
   color: white;
-  font-size: var(--fs_p_xl);
   cursor: pointer;
 
   transition: all 0.2s;
@@ -171,24 +186,9 @@ img {
   grid-template-columns: repeat(1, 1fr);
 }
 
-.title h1 {
-  font-size: var(--fs_h1);
-  color: white;
-}
-
-.title span {
-  font-size: var(--fs_h1_xl);
-  color: goldenrod;
-}
-
-.title p {
-  color: white;
-}
-
 .title_slide .btn {
   text-align: center;
   margin-top: 4%;
-  font-size: var(--fs_h2);
   color: rgb(152, 152, 152);
   padding: 0rem 2rem;
   width: fit-content;
@@ -234,10 +234,6 @@ img {
   font-size: var(--fs_p_xl);
   color: goldenrod;
 }
-.content_section h1 span {
-  font-size: var(--fs_h2_xl);
-  color: goldenrod;
-}
 .section_title {
   max-width: 100%;
   background-color: rgb(29, 29, 29);
@@ -258,6 +254,7 @@ img {
 .section_title h1 {
   padding-top: 2%;
   text-align: center;
+  white-space: nowrap;
 }
 .section_title p {
   padding: 2% 7%;
@@ -282,10 +279,6 @@ img {
 }
 .main_content .sub_content h2 {
   padding-bottom: 1%;
-}
-.main_content .sub_content h2 span {
-  color: goldenrod;
-  font-size: var(--fs_h2_xl);
 }
 
 /************************************************************************/
@@ -449,7 +442,6 @@ img {
   width: 100%;
 }
 .interactive_piano .options span {
-  font-size: var(--fs_p_xl);
   color: white;
   margin: 5%;
 }
@@ -496,7 +488,6 @@ img {
   position: relative;
   text-align: center;
   top: 85%;
-  font-size: var(--fs_p_xl);
 }
 .interactive_piano .key.hide_piano_keys span {
   display: none;
@@ -519,14 +510,14 @@ img {
 
   /* Font Sizes */
   *{
-    --fs_h1_xl: 2.5rem;
-    --fs_h1: 1.9rem;
+    --fs_h1_xl: 1.9rem;
+    --fs_h1: 1.8rem;
 
     --fs_h2: 1.5rem;
-    --fs_h2_xl: 1.875rem;
+    --fs_h2_xl: 1.6rem;
 
-    --fs_p: 0.9rem;
-    --fs_p_xl: 1.125rem;
+    --fs_p: 0.8rem;
+    --fs_p_xl: 1rem;
   }
 
   /* Top */
