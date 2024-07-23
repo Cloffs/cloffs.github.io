@@ -509,6 +509,13 @@ img {
   color: goldenrod;
 }
 
+/* Qr Code */
+.qr_code_section img {
+  margin: auto;
+  max-width: 25%;
+  padding-bottom: 5%;
+}
+
 /* Phone display */
 @media screen and (max-width: 540px) {
 
@@ -634,5 +641,10 @@ img {
   }
   .interactive_piano .white:hover {
     opacity: 1;
+  }
+
+  /* Remove QR code display */
+  .qr_code_section {
+    display: none;
   }
 }
