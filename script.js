@@ -258,6 +258,7 @@ var noteArr = [
     { note: "B",     filePath: "Sound/note_b.wav" },
 ];
 var audio = new Audio(noteArr[0].filePath); // Load the audio source beforehand
+audio.load();
 
 function PlayNote(index) {
     if (pianoInView == false) { return; }
